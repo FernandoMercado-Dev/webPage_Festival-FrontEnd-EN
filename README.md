@@ -1,4 +1,4 @@
-# Web Music Festival
+# Web Music Festival (FrontEnd)
 
 ## Introduction
 This is a practice project to improve my skills in HTML and CSS with SASS. The goal is to create a Music Festival where you can read about us, find and read about new courses or workshops, and contact us through a form.
@@ -48,7 +48,7 @@ This is a practice project to improve my skills in HTML and CSS with SASS. The g
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/FernandoMercado-Dev/web_MusicFestival-FrontEnd-EN.git
+git clone https://github.com/FernandoMercado-Dev/web_MusicFestival-EN.git
 ```
 2. Navigate to the project folder
 3. Open the index.html file
