@@ -21,7 +21,7 @@
     "url": "https://github.com/FernandoMercado-Dev/web_MusicFestival-EN/issues"
   },
   "homepage": "https://github.com/FernandoMercado-Dev/web_MusicFestival-EN#readme",
-  "dependencies": {
+  "devDependencies": {
     "sass": "^1.78.0"
   }
 }
