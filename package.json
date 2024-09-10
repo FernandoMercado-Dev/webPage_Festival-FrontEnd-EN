@@ -1,0 +1,27 @@
+{
+  "name": "web_musicfestival-en",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS y NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernandoMercado-Dev/web_MusicFestival-EN.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "GULP"
+  ],
+  "author": "FernandoMercado-Dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FernandoMercado-Dev/web_MusicFestival-EN/issues"
+  },
+  "homepage": "https://github.com/FernandoMercado-Dev/web_MusicFestival-EN#readme",
+  "dependencies": {
+    "sass": "^1.78.0"
+  }
+}
