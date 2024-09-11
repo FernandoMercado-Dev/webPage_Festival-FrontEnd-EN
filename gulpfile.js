@@ -9,7 +9,7 @@ export function css(done) {
     // sass file location
     src('src/scss/app.scss')
         // call the compilation function
-        .pipe( sass() )
+        .pipe( sass().on('error', sass.logError) )
         // css storage destination
         .pipe( dest('build/css') )
 
@@ -18,5 +18,5 @@ export function css(done) {
 
 // monitoring files for compile
 export function dev() {
-    watch('src/scss/app.scss', css)
+    watch('src/scss/**/*.scss', css)
 }
