@@ -2,6 +2,7 @@
   "name": "web_musicfestival-en",
   "version": "1.0.0",
   "description": "Aprendiendo SASS y NPM",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch src/scss:build/css"
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/FernandoMercado-Dev/web_MusicFestival-EN#readme",
   "devDependencies": {
+    "gulp": "^5.0.0",
     "sass": "^1.78.0"
   }
 }
