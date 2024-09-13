@@ -30,7 +30,7 @@
     margin: 0 auto;
 }
 
-@mixin grid($colums: 1, $widthColum: 1fr, $gap: 2rem) {
+@mixin grid($colums: 1, $widthColum: 1fr, $gap: 5rem) {
     display: grid;
     grid-template-columns: repeat($colums, $widthColum);
     gap: $gap;

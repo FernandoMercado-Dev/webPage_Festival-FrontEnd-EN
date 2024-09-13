@@ -502,7 +502,7 @@ body > section {
   .container-stages {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 5rem;
   }
 }
 
@@ -541,4 +541,80 @@ body > section {
 }
 .bg-green li:nth-child(odd) {
   background-color: #5ebfbb;
+}
+
+.container-tickets {
+  background-color: #4CB8B3;
+}
+.container-tickets h3 {
+  color: #FFFFFF;
+}
+.container-tickets .tickets {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container-tickets .tickets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.pass {
+  transition: transform 0.3s ease-in-out;
+}
+.pass:hover {
+  transform: scale(1.1);
+}
+.pass-name {
+  font-size: 3.6rem;
+  font-weight: 900;
+  text-align: center;
+  color: #FFFFFF;
+}
+.pass-header, .pass-footer {
+  padding: 0.5rem;
+}
+.pass-header p, .pass-footer p {
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+.pass-header {
+  background-color: #F53756;
+}
+.pass-header p {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  padding: 1rem;
+}
+.pass-body {
+  background-color: #FFFFFF;
+}
+.pass-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pass-body ul li {
+  padding: 2rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+.pass-footer {
+  background-color: #FFFFFF;
+  padding: 3rem;
+}
+.pass-footer p {
+  font-size: 2.8rem;
+  font-weight: 900;
+  background-color: #752F97;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.pass-footer p:hover {
+  background-color: #391749;
 }
