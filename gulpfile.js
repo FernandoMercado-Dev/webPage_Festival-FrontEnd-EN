@@ -7,11 +7,11 @@ const sass = gulpSass(dartSass);
 
 export function css(done) {
     // sass file location
-    src('src/scss/app.scss')
+    src('src/scss/app.scss', {sourcemaps: true})
         // call the compilation function
         .pipe( sass().on('error', sass.logError) )
         // css storage destination
-        .pipe( dest('build/css') )
+        .pipe( dest('build/css', {sourcemaps: '.'}) )
 
     done()
 }
