@@ -478,3 +478,67 @@ body > section {
   color: #4CB8B3;
   font-weight: 700;
 }
+
+.lineup {
+  background-color: #F53756;
+}
+.lineup h3,
+.lineup .day {
+  text-align: center;
+  color: #FFFFFF;
+}
+.lineup .day {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container-stages {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container-stages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+.stage {
+  padding-top: 2rem;
+}
+.stage .name-stage {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.schedule {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.schedule li {
+  padding: 2.5rem;
+  font-weight: 700;
+}
+.schedule li span {
+  font-weight: 400;
+}
+
+.bg-yellow {
+  background-color: #fdda00;
+}
+.bg-yellow li:nth-child(odd) {
+  background-color: #ffdf18;
+}
+
+.bg-green {
+  background-color: #4CB8B3;
+}
+.bg-green li:nth-child(odd) {
+  background-color: #5ebfbb;
+}
