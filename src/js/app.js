@@ -27,6 +27,9 @@ function createGallery() {
 
     for(let i = 1; i <= IMAGE_COUNT; i++) {
         const image = document.createElement('IMG');
+        image.loading = 'lazy';
+        image.width = '300';
+        image.height = '200';
         image.src = `src/img/gallery/full/${i}.jpg`;
         image.alt = 'Gallery Image';
 
