@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fixedNavegation();
     createGallery();
     highlightLinks();
+    scrollNav();
 })
 
 function fixedNavegation() {
@@ -97,6 +98,22 @@ function highlightLinks() {
             if(link.getAttribute('href') === '#' + actual) {
                 link.classList.add('active');
             }
+        })
+    })
+}
+
+function scrollNav() {
+    const navLinks = document.querySelectorAll('.navigation-main a');
+
+    navLinks.forEach( link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const sectionScroll = e.target.getAttribute('href');
+            const section = document.querySelector(sectionScroll);
+
+            section.scrollIntoView({
+                behavior: 'smooth'
+            })
         })
     })
 }
