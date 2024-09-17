@@ -422,7 +422,7 @@ body > section {
   color: #FFFFFF;
   font-size: 2.4rem;
 }
-.navigation-main a:hover {
+.navigation-main a:hover, .navigation-main a.active {
   color: #fdda00;
 }
 

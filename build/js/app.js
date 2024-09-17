@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     fixedNavegation();
     createGallery();
+    highlightLinks();
 })
 
 function fixedNavegation() {
@@ -73,4 +74,29 @@ function closeModal() {
         const body = document.querySelector('body');
         body.classList.remove('overflow-hidden');
     }, 500)
+}
+
+function highlightLinks() {
+    document.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.navigation-main a');
+
+        let actual = '';
+
+        sections.forEach( section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+
+            if(window.scrollY >= (sectionTop - sectionHeight / 3)) {
+                actual = section.id;
+            }
+        })
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if(link.getAttribute('href') === '#' + actual) {
+                link.classList.add('active');
+            }
+        })
+    })
 }
