@@ -5,9 +5,12 @@ import gulpSass from 'gulp-sass'
 // Compiling SASS with the gulp-sass dependency
 const sass = gulpSass(dartSass);
 
+import terser from 'gulp-terser'
+
 export function js(done) {
 
     src('src/js/app.js')
+        .pipe(terser())
         .pipe(dest('build/js'))
 
     done()
