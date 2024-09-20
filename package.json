@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/FernandoMercado-Dev/web_MusicFestival-EN#readme",
   "devDependencies": {
+    "glob": "^11.0.0",
     "gulp": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-terser": "^2.1.0",
