@@ -26,12 +26,12 @@ function createGallery() {
     const gallery = document.querySelector('.gallery-images');
 
     for(let i = 1; i <= IMAGE_COUNT; i++) {
-        const image = document.createElement('IMG');
-        image.loading = 'lazy';
-        image.width = '300';
-        image.height = '200';
-        image.src = `src/img/gallery/thumb/${i}.jpg`;
-        image.alt = 'Gallery Image';
+        const image = document.createElement('PICTURE');
+        image.innerHTML = `
+            <source srcset="build/img/gallery/thumb/${i}.avif" type="image/avif">
+            <source srcset="build/img/gallery/thumb/${i}.webp" type="image/webp">
+            <img loading="lazy" width="200" height="300" src="build/img/gallery/thumb/${i}.jpg" alt="image gallery">
+        `;
 
         // Event Handler
         image.onclick = function() {
@@ -43,9 +43,12 @@ function createGallery() {
 }
 
 function showImage(i) {
-    const image = document.createElement('IMG');
-    image.src = `src/img/gallery/full/${i}.jpg`;
-    image.alt = 'Gallery Image';
+    const image = document.createElement('PICTURE');
+    image.innerHTML = `
+        <source srcset="build/img/gallery/full/${i}.avif" type="image/avif">
+        <source srcset="build/img/gallery/full/${i}.webp" type="image/webp">
+        <img loading="lazy" width="200" height="300" src="build/img/gallery/full/${i}.jpg" alt="imagen galeria">
+    `;
 
     // Create Modal
     const modal = document.createElement('DIV');
