@@ -30,7 +30,7 @@ function createGallery() {
         image.loading = 'lazy';
         image.width = '300';
         image.height = '200';
-        image.src = `src/img/gallery/full/${i}.jpg`;
+        image.src = `src/img/gallery/thumb/${i}.jpg`;
         image.alt = 'Gallery Image';
 
         // Event Handler
