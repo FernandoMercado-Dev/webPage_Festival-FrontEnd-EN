@@ -82,10 +82,12 @@ function processImages(file, outputSubDir) {
     const extName = path.extname(file)
     const outputFile = path.join(outputSubDir, `${baseName}${extName}`)
     const outputFileWebp = path.join(outputSubDir, `${baseName}.webp`)
+    const outputFileAvif = path.join(outputSubDir, `${baseName}.avif`)
 
     const options = { quality: 80 }
     sharp(file).jpeg(options).toFile(outputFile)
     sharp(file).webp(options).toFile(outputFileWebp)
+    sharp(file).avif().toFile(outputFileAvif)
 }
 
 // monitoring files for compile
